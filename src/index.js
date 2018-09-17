@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
-const API_KEY = 'AIzaSyBwUeFLKCYeh0yqA4jVZmT959OfUaInOwk'
+import VideoList from './components/video_list';const API_KEY = 'AIzaSyBwUeFLKCYeh0yqA4jVZmT959OfUaInOwk'
 
 
 
@@ -22,6 +22,7 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
+        <VideoList videos={this.state.videos}/>
       </div>
     );
   }
